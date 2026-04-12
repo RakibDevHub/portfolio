@@ -1,0 +1,92 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply bg-gray-50 text-gray-900;
+  }
+  
+  .dark body {
+    @apply bg-gray-900 text-gray-100;
+  }
+}
+
+@layer components {
+  .container-custom {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl font-bold text-center mb-12 bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent;
+  }
+}
+
+@layer utilities {
+  .animation-delay-2000 {
+    animation-delay: 2s;
+  }
+  .animation-delay-4000 {
+    animation-delay: 4s;
+  }
+  
+  @keyframes gradient {
+    0%, 100% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+  }
+  
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient 3s ease infinite;
+  }
+}
+
+/* Swiper Custom Styles */
+.project-swiper {
+  padding-bottom: 2rem !important;
+}
+
+.project-swiper .swiper-pagination-bullet {
+  background-color: #14b8a6;
+  opacity: 0.5;
+}
+
+.project-swiper .swiper-pagination-bullet-active {
+  background-color: #14b8a6;
+  opacity: 1;
+}
+
+.dark .project-swiper .swiper-pagination-bullet {
+  background-color: #14b8a6;
+}
+
+.swiper-button-prev-custom,
+.swiper-button-next-custom {
+  transition: all 0.3s ease;
+}
+
+.swiper-button-prev-custom:hover,
+.swiper-button-next-custom:hover {
+  background-color: #14b8a6 !important;
+  color: white !important;
+}
+
+html {
+  scroll-padding-top: 30px;
+  scroll-behavior: smooth;
+}
+
+#home {
+  min-height: 100vh;
+  padding-top: 70px;
+}
+
+@media (min-width: 768px) {
+  #home {
+    padding-top: 0;
+  }
+}
