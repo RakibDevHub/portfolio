@@ -100,43 +100,43 @@ const Hero = () => {
             </motion.div>
 
             <motion.div
-  initial={{ opacity: 0, y: 20 }}
-  animate={{ opacity: 1, y: 0 }}
-  transition={{ delay: 0.8 }}
-  className="flex gap-4 mt-8 group"
->
-  <a
-    href="https://github.com/rakibdevhub"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300 group-hover:shadow-lg"
-  >
-    <FiGithub
-      size={22}
-      className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-    />
-  </a>
-  <a
-    href="mailto:rakibdevhub@gmail.com"
-    className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300 group-hover:shadow-lg"
-  >
-    <FiMail
-      size={22}
-      className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-    />
-  </a>
-  <a
-    href="https://wa.me/8801755063066"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300 group-hover:shadow-lg"
-  >
-    <FaWhatsapp
-      size={22}
-      className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
-    />
-  </a>
-</motion.div>
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ delay: 0.8 }}
+              className="flex gap-4 mt-8 group"
+            >
+              <a
+                href="https://github.com/rakibdevhub"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300 group-hover:shadow-lg"
+              >
+                <FiGithub
+                  size={22}
+                  className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                />
+              </a>
+              <a
+                href="mailto:rakibdevhub@gmail.com"
+                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300 group-hover:shadow-lg"
+              >
+                <FiMail
+                  size={22}
+                  className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                />
+              </a>
+              <a
+                href="https://wa.me/8801755063066"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300 group-hover:shadow-lg"
+              >
+                <FaWhatsapp
+                  size={22}
+                  className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                />
+              </a>
+            </motion.div>
           </motion.div>
 
           {/* Right Side - Design/Animation */}
@@ -155,8 +155,12 @@ const Hero = () => {
 
                 {/* Center icon */}
                 <div className="absolute inset-0 flex items-center justify-center">
-                  <div className="w-32 h-32 bg-white dark:bg-gray-800 rounded-2xl shadow-2xl flex items-center justify-center">
-                    <FiCode className="w-16 h-16 text-teal-500" />
+                  <div className="w-64 h-64 bg-white dark:bg-gray-800 rounded-full shadow-2xl flex items-center justify-center overflow-hidden">
+                    <img
+                      src="/images/rakib.jpeg"
+                      alt="Rakibul Islam"
+                      className="w-auto h-full"
+                    />
                   </div>
                 </div>
 
