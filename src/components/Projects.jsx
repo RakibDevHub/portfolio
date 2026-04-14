@@ -65,11 +65,18 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
+          <span className="inline-block px-4 py-2 bg-teal-100 dark:bg-teal-900/30 text-teal-600 dark:text-teal-400 rounded-full text-sm font-semibold mb-4">
+            📁 My Projects
+          </span>
           <h2 className="text-3xl md:text-4xl font-bold mb-3">
-            Featured <span className="bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent">Projects</span>
+            Featured{" "}
+            <span className="bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent">
+              Projects
+            </span>
           </h2>
           <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
-            Full-stack apps • Mobile games • Database tools • Real-world solutions
+            Full-stack apps • Mobile games • Database tools • Real-world
+            solutions
           </p>
         </motion.div>
 
@@ -90,7 +97,8 @@ const Projects = () => {
                   More Projects
                 </h3>
                 <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                  {otherProjects.length} additional {otherProjects.length === 1 ? 'project' : 'projects'}
+                  {otherProjects.length} additional{" "}
+                  {otherProjects.length === 1 ? "project" : "projects"}
                 </p>
               </div>
               <div className="flex gap-2">
@@ -146,9 +154,15 @@ const Projects = () => {
             rel="noopener noreferrer"
             className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-700 text-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
           >
-            <FiGithub size={20} className="group-hover:rotate-12 transition-transform" />
+            <FiGithub
+              size={20}
+              className="group-hover:rotate-12 transition-transform"
+            />
             <span className="font-semibold">View All Projects on GitHub</span>
-            <FiExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
+            <FiExternalLink
+              size={16}
+              className="group-hover:translate-x-1 transition-transform"
+            />
           </a>
         </motion.div>
       </div>
