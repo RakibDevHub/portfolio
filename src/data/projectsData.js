@@ -20,7 +20,7 @@ export const projectsData = [
     github: "https://github.com/RakibDevHub/IUS-Ping",
     status: "Completed",
     category: "internship",
-    image: "/images/projects/ius-ping.jpg",
+    image: "/images/projects/ius-ping.png",
     badge: "Internship",
   },
   {
@@ -65,7 +65,7 @@ export const projectsData = [
     github: "https://github.com/RakibDevHub/Database-Management-Bot",
     status: "Completed",
     category: "tools",
-    image: "/images/projects/database-bot.jpg",
+    image: "/images/projects/database-bot.png",
   },
   {
     id: 7,
