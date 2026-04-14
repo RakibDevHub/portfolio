@@ -12,7 +12,7 @@ const Experience = () => {
   const technologies = ['JSP', 'Oracle Database', 'Java', 'HTML/CSS', 'JavaScript', 'SMS Gateway API'];
 
   return (
-    <section id="experience" className="py-20 relative overflow-hidden bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
+    <section id="experience" className="py-20 relative overflow-hiddengit">
       <div className="container-custom relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
