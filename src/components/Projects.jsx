@@ -65,9 +65,11 @@ const Projects = () => {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-3xl md:text-4xl font-bold mb-2">Projects</h2>
-          <p className="text-gray-600 dark:text-gray-400">
-            {projects.length} projects completed
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            Featured <span className="bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent">Projects</span>
+          </h2>
+          <p className="text-gray-600 dark:text-gray-400 max-w-2xl mx-auto">
+            Full-stack apps • Mobile games • Database tools • Real-world solutions
           </p>
         </motion.div>
 
@@ -83,9 +85,14 @@ const Projects = () => {
         {otherProjects.length > 0 && (
           <div className="mt-8">
             <div className="flex justify-between items-center mb-6">
-              <h3 className="text-2xl font-bold bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent">
-                More Projects
-              </h3>
+              <div>
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-teal-500 to-emerald-500 bg-clip-text text-transparent">
+                  More Projects
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">
+                  {otherProjects.length} additional {otherProjects.length === 1 ? 'project' : 'projects'}
+                </p>
+              </div>
               <div className="flex gap-2">
                 <div className="swiper-button-prev-custom w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center cursor-pointer hover:bg-teal-100 dark:hover:bg-teal-900/30 transition-colors">
                   <FiChevronLeft size={20} />
@@ -131,17 +138,17 @@ const Projects = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="mt-12 text-center"
+          className="mt-16 text-center"
         >
           <a
             href="https://github.com/RakibDevHub"
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 px-6 py-3 bg-gray-900 dark:bg-gray-800 text-white rounded-lg hover:bg-gray-800 transition-colors"
+            className="group inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-gray-900 to-gray-800 dark:from-gray-800 dark:to-gray-700 text-white rounded-xl hover:shadow-lg transition-all duration-300 hover:scale-105"
           >
-            <FiGithub size={20} />
-            View All Projects on GitHub
-            <FiExternalLink size={16} />
+            <FiGithub size={20} className="group-hover:rotate-12 transition-transform" />
+            <span className="font-semibold">View All Projects on GitHub</span>
+            <FiExternalLink size={16} className="group-hover:translate-x-1 transition-transform" />
           </a>
         </motion.div>
       </div>
@@ -189,10 +196,20 @@ const ProjectCard = ({ project, variant }) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-12 h-12 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-all hover:scale-110"
+            className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all hover:scale-110"
           >
-            <FiGithub size={22} className="text-gray-800" />
+            <FiGithub size={22} className="text-white" />
           </a>
+          {project.link && (
+            <a
+              href={project.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="w-12 h-12 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all hover:scale-110"
+            >
+              <FiExternalLink size={22} className="text-white" />
+            </a>
+          )}
         </div>
 
         <div className="absolute top-3 left-3">
@@ -238,6 +255,11 @@ const ProjectCard = ({ project, variant }) => {
               {tech}
             </span>
           ))}
+          {project.tech.length > 4 && (
+            <span className="px-2 py-1 bg-gray-200 dark:bg-gray-600 text-xs rounded">
+              +{project.tech.length - 4}
+            </span>
+          )}
         </div>
       </div>
     </motion.div>
@@ -280,18 +302,18 @@ const SliderProjectCard = ({ project }) => {
             href={project.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-all hover:scale-110"
+            className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all hover:scale-110"
           >
-            <FiGithub size={18} className="text-gray-800" />
+            <FiGithub size={18} className="text-white" />
           </a>
-          {project.url && (
+          {project.link && (
             <a
-              href={project.url}
+              href={project.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="w-10 h-10 bg-white rounded-full flex items-center justify-center hover:bg-gray-100 transition-all hover:scale-110"
+              className="w-10 h-10 bg-teal-500 rounded-full flex items-center justify-center hover:bg-teal-600 transition-all hover:scale-110"
             >
-              <FiLink size={18} className="text-gray-800" />
+              <FiExternalLink size={18} className="text-white" />
             </a>
           )}
         </div>

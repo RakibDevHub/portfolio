@@ -74,7 +74,7 @@ export const projectsData = [
       "Modern food delivery landing page with smooth animations and responsive design.",
     tech: ["HTML5", "CSS3", "JavaScript"],
     github: "https://github.com/RakibDevHub/Omnifood",
-    url: "https://rakibdevhub.github.io/Omnifood/",
+    demo: "https://rakibdevhub.github.io/Omnifood/",
     status: "Completed",
     category: "frontend",
     image: "/images/projects/omnifood.jpg",
