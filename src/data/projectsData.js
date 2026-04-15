@@ -88,6 +88,6 @@ export const projectsData = [
     github: "https://github.com/RakibDevHub/GalaxyPilot",
     status: "Completed",
     category: "games",
-    image: "/images/projects/galaxypilot.jpg",
+    image: "/images/projects/galaxypilot.png",
   },
 ];
