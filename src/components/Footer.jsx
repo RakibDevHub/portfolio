@@ -46,14 +46,6 @@ const Footer = () => {
             >
               <FaWhatsapp size={18} />
             </a>
-            <a
-              href="#"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="p-2 bg-gray-800 rounded-full hover:bg-teal-500 transition-all hover:scale-110"
-            >
-              <FaLinkedin size={18} />
-            </a>
           </div>
 
           {/* Copyright */}
