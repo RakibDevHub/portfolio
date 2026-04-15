@@ -115,31 +115,33 @@ const Hero = () => {
                 href="https://github.com/rakibdevhub"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300"
+                className="group p-3 bg-gray-100 dark:bg-gray-800 rounded-full transition-all duration-300 hover:scale-110 hover:bg-teal-100 dark:hover:bg-teal-900/30"
               >
                 <FiGithub
                   size={22}
-                  className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                  className="transition-all duration-300 group-hover:text-teal-600 dark:group-hover:text-teal-400 group-hover:scale-125"
                 />
               </a>
+
               <a
                 href="mailto:rakibdevhub@gmail.com"
-                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300"
+                className="group p-3 bg-gray-100 dark:bg-gray-800 rounded-full transition-all duration-300 hover:scale-110 hover:bg-teal-100 dark:hover:bg-teal-900/30"
               >
                 <FiMail
                   size={22}
-                  className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                  className="transition-all duration-300 group-hover:text-teal-600 dark:group-hover:text-teal-400 group-hover:scale-125"
                 />
               </a>
+
               <a
                 href="https://wa.me/8801755063066"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-3 bg-gray-100 dark:bg-gray-800 rounded-full hover:bg-teal-100 dark:hover:bg-teal-900/30 hover:scale-110 transition-all duration-300"
+                className="group p-3 bg-gray-100 dark:bg-gray-800 rounded-full transition-all duration-300 hover:scale-110 hover:bg-teal-100 dark:hover:bg-teal-900/30"
               >
                 <FaWhatsapp
                   size={22}
-                  className="hover:text-teal-600 dark:hover:text-teal-400 transition-colors"
+                  className="transition-all duration-300 group-hover:text-teal-600 dark:group-hover:text-teal-400 group-hover:scale-125"
                 />
               </a>
             </motion.div>
