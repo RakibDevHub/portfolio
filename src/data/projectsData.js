@@ -3,13 +3,13 @@ export const projectsData = [
     id: 1,
     title: "TiffinCraft",
     description:
-      "Cloud kitchen marketplace platform connecting local home kitchens with customers. Complete multi-vendor system with order management, subscriptions, and payment integration.",
+      "A platform connecting home-based kitchens with local customers, featuring vendor dashboards, real-time order tracking, and integrated subscription plans.",
     tech: ["PHP", "Oracle", "JavaScript", "SSLCommerz"],
     github: "https://github.com/RakibDevHub/TiffinCraft",
     status: "Completed",
     category: "main",
     image: "/images/projects/tiffincraft.png",
-    badge: "Final Year Project",
+    badge: "Final Project",
   },
   {
     id: 2,

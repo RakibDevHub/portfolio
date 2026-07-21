@@ -234,7 +234,7 @@ const ProjectCard = ({ project, variant }) => {
                 : "bg-purple-500 text-white"
             }`}
           >
-            {variant === "internship" && <FiBriefcase size={12} />}
+            <FiBriefcase size={12} />
             {project.badge}
           </span>
         </div>

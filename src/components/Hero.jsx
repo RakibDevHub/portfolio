@@ -48,7 +48,7 @@ const Hero = () => {
               transition={{ delay: 0.3 }}
               className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4"
             >
-              Hi, I'm
+              Hi, I'm 
               <span className="bg-gradient-to-r from-teal-500 via-emerald-500 to-cyan-500 bg-clip-text text-transparent animate-gradient block">
                 Rakibul Islam
               </span>
@@ -59,7 +59,7 @@ const Hero = () => {
               transition={{ delay: 0.4 }}
               className="text-lg sm:text-xl text-gray-600 dark:text-gray-300 mb-4"
             >
-              Full-Stack Developer
+              Full-Stack Developer | Building Real-World Solutions
             </motion.p>
             <motion.p
               initial={{ opacity: 0, y: 20 }}
@@ -68,8 +68,7 @@ const Hero = () => {
               className="text-gray-500 dark:text-gray-400 mb-6"
             >
               Passionate about building innovative solutions that solve
-              real-world problems. Seeking internship/entry-level developer
-              role.
+              real-world problems. 📌 Seeking internship/entry-level developer role.
             </motion.p>
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -97,7 +96,7 @@ const Hero = () => {
               <motion.a
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
-                href="/resume.pdf"
+                href="/Resume_of_Md_Rakibul_Islam.pdf"
                 className="px-6 sm:px-8 py-3 border-2 border-teal-500 text-teal-600 dark:text-teal-400 rounded-lg hover:bg-teal-50 dark:hover:bg-teal-900/20 transition-all duration-300 font-semibold flex items-center gap-2"
               >
                 <FiDownload size={18} />

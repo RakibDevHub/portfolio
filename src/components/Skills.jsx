@@ -11,7 +11,7 @@ const skillsData = [
   {
     category: 'Frameworks & Libraries',
     icon: '⚛️',
-    skills: ['React.js', 'Next.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'Bootstrap', 'JSP'],
+    skills: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'Bootstrap', 'JSP'],
     description: 'Creating responsive and dynamic user interfaces'
   },
   {
@@ -25,12 +25,6 @@ const skillsData = [
     icon: '🛠️',
     skills: ['Git', 'GitHub', 'VS Code', 'Android Studio', 'REST APIs'],
     description: 'Industry-standard development workflows'
-  },
-  {
-    category: 'Operating Systems',
-    icon: '🖥️',
-    skills: ['Windows', 'Linux'],
-    description: 'Cross-platform development experience'
   },
 ];
 
