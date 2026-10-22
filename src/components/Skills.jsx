@@ -11,7 +11,7 @@ const skillsData = [
   {
     category: 'Frameworks & Libraries',
     icon: '⚛️',
-    skills: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'Bootstrap', 'JSP'],
+    skills: ['React.js', 'Node.js', 'Express.js', 'Tailwind CSS', 'Bootstrap'],
     description: 'Creating responsive and dynamic user interfaces'
   },
   {
